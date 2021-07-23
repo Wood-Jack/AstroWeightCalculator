@@ -3,9 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>Astro Weight Calculator</title>
+
+    <h1>Astro Weight Calculator</h1>
   </head>
   <body>
      <!-- Write your markup here  -->
+     <form>
+     <input id="user-weight" type="text" placeholder="Weight (lbs)" />
+
+     <select id="planets">
+       <option>Planets</option>
+     </select>
+     <button id="calculate-button" onclick="calculateWeight()">Calculate</button>
+    </form>
+     <!-- <script>
+       var select = document.getElementById("planets"),
+
+       planets = ['Pluto', 'Neptune', 'Uranus', 'Saturn', 'Jupiter', 'Mars',
+       'Moon','Earth', 'Venus', 'Mercury','Sun'];
+
+       for(var i = 0; i < planets.length; i++)
+       {
+         var option = document.createElement("OPTION"),
+          txt = document.createTextNode(planets[i]);
+         option.appendChild(txt)
+         select.insertBefore(option,select.lastChild);
+       }
+     </script> -->
+
+     <p id ="output"></p>
+
+     
 
     <script src="main.js" charset="utf-8"></script>
   </body>
